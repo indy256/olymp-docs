@@ -1,0 +1,46 @@
+img.teximage {
+  vertical-align: middle;
+}
+
+div.displaymath {
+  padding-left: 4em;
+  margin: 0.5em 0;
+}
+
+table.displaymath {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0em;
+}
+
+table.displaymath td.dspleft {
+  padding: 0em;
+  margin: 0em;
+  padding-left: 4em;
+  text-align: left;
+}
+
+table.displaymath td.dspright {
+  padding: 0em;
+  margin: 0em;
+  font-weight: bold;
+  text-align: right;
+}
+
+
+/*
+  divs on the filter settings page
+ */
+
+div.filter-settings-error {
+  color: red;
+  margin-bottom: 0.5em;
+}
+
+div.filter-settings-correct {
+  color: green;
+  margin-bottom: 0.5em;
+}

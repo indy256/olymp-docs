@@ -1,0 +1,43 @@
+/* $Id: geshifilter.css,v 1.7 2008/01/18 22:58:39 soxofaan Exp $ */
+
+/**
+ * CSS rules for the general GeSHi filter containers.
+ * The language specific rules are generated automatically and written to a
+ * CSS file in your files directory.
+ */
+
+
+/* inline source code */
+span.geshifilter {
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+/* block source code */
+div.geshifilter {
+  display: block;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  line-height: 1.3;
+}
+
+div.geshifilter > pre, div.geshifilter > div {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+div.geshifilter > pre ol, div.geshifilter > div ol {
+  padding-left: 1em;
+}
+
+/* Set line-height for syntax highlighting with line numbers */
+.geshifilter ol {
+  margin: 0;
+  line-height: 1.3;
+}
+

@@ -1,0 +1,21 @@
+div.snippet {
+  border: thin outset black;
+  background: #FFFFDD;
+}
+
+td.snippet_icon { vertical-align: top; }
+img.snippet_icon { padding: 0.5em; width: 60px; height: 65px; }
+
+td.snippet_instruction { vertical-align: middle; }
+.snippet_instruction { padding-right: 0.5em; }
+
+td.snippet_content { padding-left: 0.5em; }
+
+form.snippet textarea,
+form.snippet input[type="text"]
+ {
+  font-family: monospace;
+  background: white;
+  color: black;
+  border: medium inset;
+}

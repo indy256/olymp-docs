@@ -1,0 +1,28 @@
+body { font-family: serif; }
+
+/* Hide sidebar and other layout stuff in print,
+   but only on node pages (see #191), i.e. under class "page_node". */
+
+body.page_node #header { display: none; }
+body.page_node #sidebar_left { display: none; }
+body.page_node #sidebar_right { display: none; }
+body.page_node #site_map { display: none; }
+
+/* Do not display DruCodEvent submissions and submit form (but still leave
+   problem content (title, content) visible) */
+body.page_node form.codevent_submit { display: none; }
+body.page_node form.codevent_refresh_submissions { display: none; }
+body.page_node div.codevent_no_submissions { display: none; }
+
+/* print-logo is added by the "print" module.
+   Looks nice, so we use it --- just make it float. */
+div.print-logo { float: left; margin-right: 0.5em; }
+
+/* Otherwise system.css adds a border-top, which looks funny (since whole
+   geshi code already has a second border) */
+div.geshifilter tbody { border-top: thin none; }
+div.geshifilter pre {
+  margin-top: 0px; margin-bottom: 0px;
+  padding-top: 0px; padding-bottom: 0px;
+}
+div.geshifilter td.de1 { margin-top: 0px; padding-top: 0px; }
