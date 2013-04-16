@@ -1,0 +1,659 @@
+@charset "utf-8";
+
+body {
+	background: #380001 url('../images/background_gradient.jpg') repeat-x;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 0.7em;
+	color: #ffffff;
+	margin: 0px;
+}
+
+img {
+	border: 0px;
+	display: inline-block;
+}
+
+a, a:link, a:active, a:visited {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+pre {
+	font-size: 1em;
+}
+
+#container {
+	width: 1200px;
+	margin: 26px auto 0px auto;
+	position: relative;
+}
+
+#header {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+#sidebar_left {
+	width: 200px;
+	font-weight: bold;
+	color: #313131;
+	margin-top: 15px;
+	float: left;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.sidebar_left_block {
+	width: 160px;
+	padding: 20px;
+	background: #d8d8d8 url('../images/left_menu_upper_corner.gif') left top no-repeat;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.sidebar_left_block_corner {
+	width: 6px;
+	height: 6px;
+	background: url('../images/left_menu_lower_corner.gif') left bottom no-repeat;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+#sidebar_left h2 {
+	display: none;
+}
+
+#sidebar_left ul, #sidebar_right ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	list-style-image: none;
+}
+
+#sidebar_left ul.menu li.leaf {
+	list-style: none;
+	list-style-image: none;
+}
+
+#sidebar_left ul li {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 0.5em 0;
+}
+
+#sidebar_left ul.menu ul.menu li {
+    border: 0;
+}
+
+#sidebar_left ul li ul {
+	padding-left: 0.5em;
+}
+
+#sidebar_left a, #sidebar_right a {
+	color: #313131;
+}
+
+#sidebar_right {
+	width: 300px;
+	color: #313131;
+	margin-top: 15px;
+	float: left;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.sidebar_right_block, .block-user {
+	width: 300px;
+	padding: 0px;
+	position: relative;
+	margin-bottom: 10px;
+	background: #e0e0e0 url('../images/right_menu_upper_corner.gif') right top no-repeat;
+}
+
+.sidebar_right_block_title {
+	width: 300px;
+	min-height: 25px;
+	margin: 0px;
+	padding-top: 10px;
+	background: #e0e0e0 url('../images/right_menu_upper_corner.jpg') right top no-repeat;
+}
+
+.sidebar_right_block_content, .block-user div.content {
+	width: 260px;
+	margin: 0px;
+	padding: 15px 20px;
+}
+
+.sidebar_right_block_corner {
+	width: 9px;
+	height: 9px;
+	background: url('../images/right_menu_lower_corner.gif') right bottom no-repeat;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#sidebar_right h2 {
+	font-size: 1.2em;
+	color: #39609f;
+	margin: 0px 0px 0px 20px;
+}
+
+#sidebar_right li.leaf {
+	list-style: square;
+}
+
+#sidebar_right small {
+	color: #838383;
+	font-size: 0.8em;
+	font-weight: normal;
+}
+
+#sidebar_right small a {
+	color: #838383;
+}
+
+#sidebar_right h3 {
+	margin: 0px auto;
+	font-size: 1.2em;
+}
+
+#sidebar_right h3.green, #sidebar_right h3.green a {
+	color: #5ba955;
+}
+
+#sidebar_right h3.red, #sidebar_right h3.red a  {
+	color: #e51919;
+}
+
+#sidebar_right h3.orange, #sidebar_right h3.orange a  {
+	color: #5d5dd3;
+}
+
+#sidebar_right p {
+	font-weight: normal;
+	margin-top: 3px;
+}
+
+.user_panel .input, .user_panel .form-text {
+	width: 105px;
+	border: 0px;
+	color: #666666;
+	border: 1px #666666 solid;
+	font-size: 1em;
+	padding: 2px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.user_panel div.inline input, .user_panel .form-submit {
+	font-size: 1em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+.user_panel {
+	width: 260px;
+	padding: 0px;
+	margin-bottom: 15px;
+}
+
+.user_panel h2 {
+	display: none;
+}
+
+/* Override previous "display: none" on h2 in right sidebar. */
+.block-advertised_nodes h2.advertised_nodes_section_title { display: block !important; }
+
+.user_panel label {
+	display: none;
+}
+
+.user_panel p {
+	display: inline;
+	padding: 0px 5px;
+}
+
+.user_panel a {
+	padding-right: 5px;
+}
+
+.user_panel a.darker {
+	color: #a07d7d !important;
+}
+
+.user_panel ul {
+	margin-left: 10px;
+	position: relative;
+	left: 10px;
+}
+
+.form-submit {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+#user-login-form .item-list {
+	display: inline-block;
+	margin-left: 3px;
+}
+
+#user-login-form ul, #user-login-form li {
+	margin: 0px;
+	padding: 0px;
+	display: inline-block;
+}
+
+#user-login-form {
+	padding-left: 0px;
+	text-align: left;
+}
+
+#user-login-form ul {
+	position: relative;
+	left: 0px;
+}
+
+#block-user-0 {
+	background: none;
+}
+
+#block-user-0 div.content {
+	padding: 5px 35px;
+	width: 230px
+}
+
+#block-user-0 a {
+	color: #ffffff;
+}
+
+.block a {
+	color: #313131;
+}
+
+#edit-search-block-form-1-wrapper { padding: 0px; margin: 0px; }
+#edit-search-block-form-1 {
+	border: 1px #bfbfbf solid;
+	width: 160px;
+	background: #ffffff url('../images/search_icon.gif') no-repeat;
+	padding: 2px 5px 2px 25px;
+	font-size: 1.1em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+.search_button {
+	border: 0px;
+	background: #e0e0e0;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif  !important;
+	padding: 0px 0px 0px 3px;
+}
+
+#search-theme-form .form-item, #block-user-0 .form-item {
+	display: inline;
+}
+
+.banner {
+	background: #646464;
+	color: #ffffff;
+	width: 250px;
+	height: 45px;
+	margin: 10px 25px;
+	font-size: 1.2em;
+	text-align: center;
+	display: none;
+}
+
+#content {
+	min-width: 640px;
+	color: #000000;
+	background: #ffffff;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	float: left;
+	position: relative;
+	padding: 30px;
+	font-size: 1.1em;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#content a {
+	color: #5d5dd3;
+}
+
+#content a, #content a:link, #content a:active, #content a:visited {
+	text-decoration: underline;
+}
+
+/* Change link bg, to visualize hover.
+   Note: we change only background-color, not bg image.
+   Important e.g. for sliders in http://informatyka.wroc.pl/node/xxx/edit
+   --- they have arrows as bg images. */
+#content a:hover { background-color: #EEF; }
+
+#content a:hover {
+	text-decoration: none;
+}
+
+#content_upper_left_corner,
+#content_upper_right_corner,
+#content_lower_left_corner,
+#content_lower_right_corner {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+}
+
+#content_upper_left_corner {
+	background: url('../images/content_upper_left_corner.gif') left top no-repeat;
+	left: 0px;
+	top: 0px;
+}
+
+#content_upper_right_corner {
+	background: url('../images/content_upper_right_corner.gif') right top no-repeat;
+	right: 0px;
+	top: 0px;
+}
+
+#content_lower_left_corner {
+	background: url('../images/content_lower_left_corner.gif') left bottom no-repeat;
+	left: 0px;
+	bottom: 0px;
+}
+
+#content_lower_right_corner {
+	background: url('../images/content_lower_right_corner.gif') right bottom no-repeat;
+	right: 0px;
+	bottom: 0px;
+}
+
+#content h1 {
+	font-size: 1.5em;
+	font-weight: normal;
+	margin: 0px;
+	color: #39609f;
+}
+
+#content p a:visited {
+	color: #800080;
+}
+
+#content h2 {
+	font-size: 1.2em;
+	color: #000000;
+	margin-top: 5px;
+}
+
+#content h2 a, #content h2 a:link, #content h2 a:active, #content h2 a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+#content a:hover {
+	text-decoration: underline;
+}
+
+#content small {
+	font-size: 0.9em;
+	color: #838383;
+}
+
+.article h3, .news h3 {
+	font-size: 1.1em;
+}
+
+.news {
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.article {
+	vertical-align: top;
+	margin-bottom: 15px;
+}
+
+.article h1 {
+	margin-bottom: 0px;
+}
+
+.article h1, .news h1 {
+	font-size: 1.5em !important;
+	color: #000000 !important;
+	font-weight: bold !important;
+}
+
+
+.article .difficulty {
+    margin: 0.6em 0;
+    float: right;
+}
+
+.article .difficulty img {
+    margin: 0 0 0 0.5em;
+	display: inline;
+}
+
+#partners {
+	width: 150px;
+	display: inline-block;
+	margin-right: 0px;
+}
+
+#partners p {
+	margin-top: 0px;
+	font-weight: bold;
+}
+
+#partners img {
+	display: inline;
+}
+
+#site_map {
+	width: 930px;
+	float: right;
+}
+
+#footer {
+	width: 1150px;
+	min-height: 100px;
+	background: #000000 url('../images/partners_site_map_background.gif') repeat-y;
+	position: relative;
+	padding: 25px;
+	font-family: Tahoma, Geneva, sans-serif;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#partners_upper_corner {
+	width: 10px;
+	height: 10px;
+	background: url('../images/partners_upper_corner.gif') left top no-repeat;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#partners_lower_corner {
+	width: 10px;
+	height: 10px;
+	background: url('../images/partners_lower_corner.gif') left bottom no-repeat;
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+}
+
+#site_map_upper_corner {
+	width: 10px;
+	min-height: 10px;
+	background: url('../images/site_map_upper_corner.gif') right top no-repeat;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#site_map_lower_corner {
+	width: 10px;
+	min-height: 10px;
+	background: url('../images/site_map_lower_corner.gif') right bottom no-repeat;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+
+#site_map ul {
+	list-style: none;
+	margin: 0px 0px 20px 0px;
+	display: inline-block;
+	padding: 0px 25px 0px 0px;
+	vertical-align: top;
+}
+
+#site_map ul li p {
+	margin: 0px 0px 10px 0px;
+	font-weight: bold;
+}
+
+#copyrights {
+	font-size: 0.9em;
+	padding: 0px 20px;
+}
+
+#copyrights p {
+	display: inline-block;
+	margin: 5px 0px;
+}
+
+.taxonomy_columns td {
+	border-bottom: 1px solid #C4C4C4;
+  	vertical-align: top;
+}
+
+tbody {
+	border: 0px;
+}
+
+col.taxonomy_column_0,
+col.taxonomy_column_1 { width: 320px; }
+
+.taxonomy_cell_0 { padding-right: 15px; border-top: 0px; }
+.taxonomy_cell_1 { padding-left: 15px; border-top: 0px; }
+
+div.geshifilter {
+	font-size: 1.1em;
+	overflow: auto;
+}
+
+.screen_display_none {
+	display: none;
+}
+
+.taxonomy_columns .news, .taxonomy_columns .article {
+	border-bottom: 0px !important;
+}
+
+.codevent_no_access a {
+	color: #B00000 !important;
+}
+
+.block-simplenews .feed-icon img {
+	position: relative;
+	bottom: -3px;
+	padding: 0px;
+}
+
+.nagroda {
+	width: 150px;
+	height: 150px;
+	border: 0px;
+}
+
+/* Override codevent.css colors to match fallspot.
+   Specified with "body.fallspot", to have higher matching score,
+   "!important" is probably not needed anymore. */
+body.fallspot div.codevent_no_access { background: #400 !important; }
+body.fallspot .codevent_action_list td { background: #303030; }
+body.fallspot .codevent_results_acc { color: black; background-color: lightgreen !important; }
+body.fallspot .codevent_results_tle { color: black; background-color: yellow !important; }
+body.fallspot .codevent_results_wa { color: black; background-color: #dd7700 !important; }
+body.fallspot .codevent_results_ce { color: black; background-color: magenta !important; }
+body.fallspot .codevent_results_nc { color: black; background-color: lightgrey !important; }
+body.fallspot .codevent_results_csuccess { color: black; background-color: #9aff9a !important; } /* lighter version of "lightgreen" */
+body.fallspot td.codevent_cerr_details { color: black; background: #ffed7b !important; }
+
+/* Use the default CE cell background (we overridden it to darker bg above,
+but inside codevent_tests_details --- we want the bg light again.) */
+body.fallspot .codevent_action_list .codevent_tests_details td {
+    background: #F0F8FF;
+}
+
+/* To make messages (done e.g. when sending message though "contact"
+   module, or refreshing cron job, or entering "File browser" for the 1st time
+   (creating dir), and many other cases...) */
+.messages {
+  background-color:#DFD;
+  border: thin solid #CCC;
+  /* some vertical space from the remaining page content and following messages */
+  margin-bottom: 0.5em;
+}
+
+.wpi_login_message {
+  background: #800;
+  border: thin none;
+  color: #FFF;
+  margin-top: 1em;
+  padding: 0.2em;
+  text-align: center;
+}
+
+.node-unpublished {
+  /* Override default in node.css */
+  background-color:#EEE4E4;
+}
+
+/* For http://informatyka.wroc.pl/trac/ticket/59,
+   to make http://informatyka.wroc.pl/node/116 look good. */
+div.content pre.cpp,
+div.content pre.c { white-space: pre-wrap; width: 510px; }
+
+/* needed for /var/www/themes/wpi/script.js to work sensibly */
+.screen_display_none { display: none; }
+
+/* larger editor height, for http://informatyka.wroc.pl/forum/viewtopic.php?f=7&t=132&p=377 */
+html.js .body-field-wrapper .resizable-textarea textarea { height: 40em; }
+
+/* Currently used only to warn about hotmail, see drupal-script.js. */
+.popup_warning {
+  border: 1px solid #d77;
+  background: #fcc;
+  color: #220;
+  padding: 2px;
+  display: none;
+}
+
+table#main_columns { border: 0px; }
+td.main_column { border: 0px; margin: 0px; padding: 0px; vertical-align: top; }
+
+.spot_menu_image {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Otherwise long item names inside this <select> make it very wide,
+   and so the whole page becomes very wide.
+   Applies to any http://informatyka.wroc.pl/node/XXX/edit page 
+   for article with difficulty. */
+select#edit-field-codevent-0-value { width: 600px; }
+
+/* Override system.css that sets stuff inside container-inline as inline */
+.container-inline div.wpi_search_block { display: block; }
+.container-inline div.wpi_search_block div { display: block; }

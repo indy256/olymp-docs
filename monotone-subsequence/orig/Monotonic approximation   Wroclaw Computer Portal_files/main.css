@@ -1,0 +1,33 @@
+/* Common CSS (for both screen and print) */
+
+/* Don't know why, but on front page CCK is not used, so nodes' teasers
+   are not formatted through wpi_echo_node_content,
+   so we cannot depend on wpi-node-image class --- we have to explicitly add
+   div.field-field-news-image below (and div.field-field-article-image, just in
+   case normal article will be placed there). */
+
+div.wpi-node-image,
+div.field-field-news-image,
+div.field-field-article-image {
+  float: right;
+  margin-top: 0px; /* no need, this is the top of the page */
+  margin-right: 0px; /* no need, this is the right side of the page, which has it's own margin */
+  margin-left: 0.7em;
+  margin-bottom: 0.3em;
+}
+
+.wpi-image-caption-left  { float: left ; }
+.wpi-image-caption-right { float: right; }
+
+.wpi-image-caption-left,
+.wpi-image-caption-right,
+.wpi-image-caption-nofloat {
+  background: #DDD; margin: 10px; padding: 10px; border: thin solid #666; }
+
+/* make items with class="js_link" look just like <a href=...> */
+span.js_link { text-decoration: underline; color: #00F; cursor: pointer; }
+
+/* <abbr> looks like a link anyway, leave color and underline */
+abbr.js_link { cursor: pointer; }
+
+abbr { border-bottom: .1em dotted; }

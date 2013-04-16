@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/* Common CSS for "default screen" and "spot screen"
+   See screen.css for default-specific CSS,
+   see ../spot/spot.css for spot-specific CSS. */
+
+div.social_links { margin-top: 1em; }

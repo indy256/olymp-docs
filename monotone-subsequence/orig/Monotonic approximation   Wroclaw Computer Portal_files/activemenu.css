@@ -1,0 +1,23 @@
+li.activemenu-processed {
+  cursor: pointer;
+}
+
+li.activemenu-processed ul {
+  cursor: default;
+}
+
+li.activemenu-processed.collapsed {
+  list-style-image: url(plus.png);
+}
+
+li.activemenu-processed.expanded {
+  list-style-image: url(minus.png);
+}
+
+li.activemenu-processed.loading {
+  list-style-image: url(status-active.gif);
+}
+
+li.collapsed ul {
+  display: none;
+}
