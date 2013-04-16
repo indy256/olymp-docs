@@ -1,0 +1,421 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0035)http://informatyka.wroc.pl/node/160 -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+            
+            
+<link rel="shortcut icon" href="http://informatyka.wroc.pl/themes/wpi/favicon.ico" type="image/x-icon">
+            <title>Monotoniczna aproksymacja | Wrocławski Portal Informatyczny</title>
+            <link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/content-module.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/drutex.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/filefield.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/fivestar.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/geshifilter-languages-63845429.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/geshifilter.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/node.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/simplenews.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/snippets.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/defaults.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/system.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/system-menus.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/upload_element.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/user.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/fieldgroup.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/views.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/printlinks.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/activemenu.css">
+<link type="text/css" rel="stylesheet" media="all" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/main.css">
+<link type="text/css" rel="stylesheet" media="print" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/print.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/screen.css">
+<link type="text/css" rel="stylesheet" media="screen" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/screen-common.css">
+            <!--[if lt IE 8]>
+                <link href="/themes/wpi/styles/ie7.css" rel="stylesheet" type="text/css">
+            <![endif]-->
+            <!--[if lt IE 7]>
+                <link href="/themes/wpi/styles/ie6.css" rel="stylesheet" type="text/css">
+            <![endif]-->
+            <script src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/jquery.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/drupal.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/pl_c0d0dc49441b046a1f0a656bbeb4d825.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/jstools.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/activemenu.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/fivestar.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/script.js"></script>
+<script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/drupal-script.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "jstools": { "cleanurls": true, "basePath": "/" }, "activemenu": { "#block-menu-primary-links": "activemenu/menu", "#block-user-1": "activemenu/menu" }, "fivestar": { "titleUser": "Twoja ocena: ", "titleAverage": "Ocena: ", "feedbackSavingVote": "Zapisywanie Twojej oceny...", "feedbackVoteSaved": "Twoja ocena została zapisana.", "feedbackDeletingVote": "Deleting your vote...", "feedbackVoteDeleted": "Your vote has been deleted." } });
+//--><!]]>
+</script>
+        <link type="text/css" rel="stylesheet" charset="UTF-8" href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/translateelement.css"><script type="text/javascript" charset="UTF-8" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/main.js"></script><script type="text/javascript" charset="UTF-8" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/element_main.js"></script></head>
+
+        
+        <body class=" page_node">
+
+            
+            <!-- header -->
+
+            <div id="container">
+                <div id="header">
+                    <a href="http://informatyka.wroc.pl/" title="Wrocławski Portal Informatyczny">
+  <img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/header.jpg" alt="Wrocławski Portal Informatyczny">
+</a>                </div>
+
+            <!-- Sorry folks, using table for layout here: we need resizeable #content width and
+              we need the columns to stick together horizontally, a table seems the only
+              sensible way to do this. See #215, #221, #224. -->
+            <table id="main_columns"><tbody><tr>
+
+            <!-- lewe menu -->
+            <td class="main_column">
+            <div id="sidebar_left">
+                <div class="sidebar_left_block">
+                    <div id="block-menu-primary-links" class="block block-menu">
+  <h2>Działy</h2>
+
+  <div class="content">
+    <ul class="menu"><li class="leaf first"><a href="http://informatyka.wroc.pl/aktualnosci" title="">Aktualności</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/forum" title="">Forum</a></li>
+<li class="expanded activemenu-processed"><a href="http://informatyka.wroc.pl/artykuly" title="">Artykuły</a><ul class="menu"><li class="leaf first"><a href="http://informatyka.wroc.pl/langs" title="">Języki programowania</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/gry" title="">Tworzenie gier</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/grafika" title="">Grafika i przetwarzanie obrazu</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/security" title="">Kryptografia i bezpieczeństwo</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/teoria" title="">Fundamenty informatyki</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/grafy" title="">Teoria grafów</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/sound" title="">Muzyka i dźwięk</a></li>
+<li class="leaf last"><a href="http://informatyka.wroc.pl/rozne" title="">Różne</a></li>
+</ul></li>
+<li class="collapsed activemenu-processed"><a href="http://informatyka.wroc.pl/algorytmika" title="">Algorytmika</a></li>
+<li class="expanded activemenu-processed"><a href="http://informatyka.wroc.pl/konkursywpi" title="">Konkursy</a><ul class="menu"><li class="expanded first activemenu-processed"><a href="http://informatyka.wroc.pl/spot" title=""><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/logo_light_scaled.jpg" alt="FallSpot &#39;11 logo" class="spot_menu_image"></a><ul class="menu"><li class="leaf first"><a href="http://informatyka.wroc.pl/taxonomy/term/124" title="">Aktualności</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/spot" title="">O konkursie</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/taxonomy/term/125" title="">Zadania</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/taxonomy/term/126" title="">Rankingi</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/forum/viewforum.php?f=26" title="">Forum / Pytania</a></li>
+<li class="leaf last"><a href="http://informatyka.wroc.pl/node/1351" title="">Regulamin</a></li>
+</ul></li>
+<li class="collapsed activemenu-processed"><a href="http://informatyka.wroc.pl/konkursywpi/zadanietygodnia" title="Zadanie Tygodnia">Zadanie tygodnia</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/scriptcraft-konkurs" title="">ScriptCraft '10</a></li>
+<li class="collapsed activemenu-processed"><a href="http://informatyka.wroc.pl/node/552" title="">Spot</a></li>
+<li class="collapsed activemenu-processed"><a href="http://informatyka.wroc.pl/ski" title="">SKI</a></li>
+<li class="collapsed last activemenu-processed"><a href="http://informatyka.wroc.pl/cepc" title="">CEPC</a></li>
+</ul></li>
+<li class="collapsed activemenu-processed"><a href="http://informatyka.wroc.pl/taxonomy/term/60" title="">Zajęcia w szkołach</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/infity" title="">Informatyka i Ty</a></li>
+<li class="collapsed activemenu-processed"><a href="http://informatyka.wroc.pl/node/180" title="Czym jest Wrocławski Portal Informatyczny?">O portalu</a></li>
+<li class="leaf"><a href="http://informatyka.wroc.pl/sitemap" title="">Mapa portalu</a></li>
+<li class="collapsed last activemenu-processed"><a href="http://informatyka.wroc.pl/nauczyciel" title="">Dydaktyka</a></li>
+</ul>  </div>
+</div>
+
+                      
+                    <div class="sidebar_left_block_corner"></div>
+                    <div class="sidebar_left_right_upper_corner"></div>
+                    <div class="sidebar_left_right_lower_corner"></div>
+                </div>
+            </div>
+            </td>
+
+            <!-- zawartość -->
+            <td class="main_column">
+            <div id="content" style="min-height: 845px;">
+                <div id="content_upper_left_corner"></div>
+                <div id="content_upper_right_corner"></div>
+                <div id="content_lower_left_corner"></div>
+                <div id="content_lower_right_corner"></div>
+                <h1>
+
+                    <!-- header title -->
+
+                    Monotoniczna aproksymacja
+                </h1>
+            <div class="article_spacer"></div><div id="node-160" class="article">
+
+<small>
+25.07.2009 - <a href="http://informatyka.wroc.pl/node/183">Jakub Radoszewski</a></small>
+
+<div class="difficulty"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ico_brain.gif" alt="Trudność" title="Trudność"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ico_brain.gif" alt="Trudność" title="Trudność"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ico_brain.gif" alt="Trudność" title="Trudność"></div>  
+  <div class="content clear-block">
+    <div class="wpi-node-image"><a href="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/Monotoniczna aproksymacja   Wrocławski Portal Informatyczny.htm" class="active"></a></div><p>Moim bodaj ulubionym zadaniem konkursowym jest <a href="http://www.topcoder.com/stat?c=problem_statement&pm=6142&rd=9925">zadanie za 500</a> z czwartej, czyli ostatniej zdalnej, rundy konkursu TopCoder Open 2006. Pewnie dlatego, że wskutek kilku ciekawych zbiegów okoliczności to zadanie okazało się mieć niespodziewany wpływ na historię moich startów w konkursach programistycznych, ale i nie tylko. Zacznijmy jednak od początku.</p>
+
+<h2>Przebieg rundy</h2>
+
+<p>Nadchodzi ostatnia runda eliminacji zdalnych w konkursie TopCoder Open 2006, jeszcze tylko ta runda i lecimy do Las Vegas. I wszystko byłoby dobrze (nawet stosunkowo dużo zawodników awansuje, bo 48), gdyby nie to, że runda jest o trzeciej w nocy czasu polskiego. Profesor Diks mawia, że wielcy mistrzowie wygrywają w każdych warunkach. Ja niestety bynajmniej się do tej grupy nie zaliczam, gdyż w środku nocy myślenie to zdecydowanie ostatnia rzecz, na jaką mam ochotę. Ponieważ była to już trzecia runda z rzędu o tak koszmarnej porze, wszyscy polscy uczestnicy intensywnie mobilizowali się do startu.</p>
+
+<p>Runda rozpoczęła się bez większych niespodzianek, ot nieprzyjemne, koderskie zadanie za 250. Schody zaczęły się dalej. Otwieram zadanie za 500, ma przyjemnie krótką treść, którą można sparafrazować tak:</p>
+
+<p><em>Dany jest ciąg liczb zerojedynkowych <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/aa298e08c8e98f8140f28e6a3df9301e570bf6c7.png" alt="$ a_1, a_2, \ldots, a_n $"> <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/7e8cffb8c97e6cc5bc825fdd3907e0a819d32bbb.png" alt="$ (n\leq 2500) $">. Należy znaleźć niemalejący ciąg rzeczywisty <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/58dee61d17c53440b2c1d1e8aff5fdae5c39c6ba.png" alt="$ b_1, b_2, \ldots, b_n $">, dla którego wyrażenie:</em></p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/99494b7d7aa09bc57d2555299b44c7af0c43ce39.png" alt="$$w_{a,b} = (a_1 - b_1)^2 + (a_2 - b_2)^2 + \ldots + (a_n - b_n)^2$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p><em>przyjmuje najmniejszą wartość, i zwrócić <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9905ec187299d0707de7c367fa64e54f29436927.png" alt="$ w_{a,b} $">.</em></p>
+
+<p>Pewne proste spostrzeżenia nasuwają się same. Dla ciągu <em>a</em> postaci: ileś zer, ileś jedynek, szukanym ciągiem <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> jest oczywiście ten sam ciąg. Z kolei dla ciągu postaci: <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/689ee4d965dcc0a3cf1768375fbd6d464243fb29.png" alt="$ j $"> jedynek, a po nich <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/e56b29e190a15e07f001608ab0183f18e4bfdd47.png" alt="$ z $"> zer, ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> musi być stały. Faktycznie, zwiększając wartości pierwszych <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/689ee4d965dcc0a3cf1768375fbd6d464243fb29.png" alt="$ j $"> elementów ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> i zmniejszając pozostałe (oczywiście w granicach <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/32d80deee5cba3c656aff775830cd425d6ceb118.png" alt="$ [0,1] $">) na pewno zmniejszamy wartość <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9905ec187299d0707de7c367fa64e54f29436927.png" alt="$ w_{a,b} $">, a poprawiając w ten sposób, na pewno w końcu sprowadzimy dowolny ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> do stałego. Wartość jego elementów <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/b14da9a5b64746f7ac57b61f20d09accdf57bc75.png" alt="$ x $"> powinna minimalizować wartość wyrażenia:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9755efba5514e27e429668c82fdbf74630542398.png" alt="$$w_{a,b} = j*(x-1)^2 + z*x^2$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>Korzystając z faktu, że powyższy wielomian kwadratowy przyjmuje minimum w miejscu zerowania się jego pochodnej:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/79bde5c06660fef1f25d328803a8553e31696624.png" alt="$$2j*(x-1) + 2z*x = 0,$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>otrzymujemy, że prawidłową wartością <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/b14da9a5b64746f7ac57b61f20d09accdf57bc75.png" alt="$ x $"> jest <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/dbb5b04ab742cf91fd9442905701b182d72006f2.png" alt="$ \frac{j}{j+z} $">, czyli średnia arytmetyczna ze wszystkich wyrazów ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">. I co dalej?</p>
+
+<p>Niestety w tym miejscu pomysły na spostrzeżenia mi się zupełnie skończyły: nie bardzo widać, jak poradzić sobie z dowolnym ciągiem <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">. Rzut oka na ranking zawodów podpowiada, że nie tylko ja mam ten problem: dosłownie kilku zawodników poradziło sobie z zadaniem całkiem szybko (najszybszemu zajęło ok. 12 minut), reszcie nie idzie jednak tak gładko: równomiernie przez większość konkursu co minutę-dwie komuś udaje się wysłać rozwiązanie (dodam, że średni czas poprawnego zgłoszenia wyniósł w tym zadaniu coś ponad 36 minut) - ewidentnie zadanie wymaga jakiegoś sprytnego pomysłu. Otwarte w akcie desperacji zadanie za 1000 nie wygląda na takie, które miałbym jeszcze szansę zdążyć rozwiązać, stosunkowo powolnie pisane rozwiązanie zadania za 250 najpewniej nie da awansu, a tu już godzina zawodów mija (dla niewtajemniczonych: runda trwa 75 minut) i pomysłów na 500-tkę brak - a wspominałem już, że jest środek nocy?</p>
+
+<p>W takim momencie można już tylko próbować zgadywać. Jedynym dobrym pomysłem po drodze wydaje się ten ze średnią arytmetyczną. Zacznijmy więc poszukiwanie <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> od samego ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">. Jeżeli jest on niemalejący, to możemy skończyć. Jeżeli nie, to wybierzmy jakiś fragment złożony z kolejnych jedynek, po którym następuje ciąg zer, i zastąpmy te dwa fragmenty jednym, którego wyraz to średnia arytmetyczna wszystkich tych zer i jedynek. I teraz możemy to postępowanie powtarzać w kółko: jeżeli sąsiadują ze sobą dwa stałe fragmenty ciągu, z których pierwszy ma wyraz większy od drugiego, to zastępujemy oba fragmenty jednym, którego wyraz jest średnią arytmetyczną wszystkich zastępowanych wyrazów. Nie jest jasne, czy za pomocą takich operacji zawsze uzyska się optymalny ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $">, ale nie ma już czasu na dowodzenie. Kilka minut szybkiego kodowania i rozwiązanie gotowe. Sprawdzam na solidnie wyglądających testach przykładowych - działa. Wysyłam kilka minut przed końcem, po czym w oczekiwaniu na wyniki spędzam jedne z bardziej nerwowych 30 minut życia.</p>
+
+<h2>Czemu to działa?</h2>
+
+<p>Na moje szczęście okazało się, że opisane rozwiązanie było poprawne i dzięki temu, podobnie jak rekordowo dużej liczbie Polaków, udało mi się awansować po raz pierwszy w życiu do półfinału konkursu TCO. Żeby jednak nie zakończyć tego opisu samym zgadywaniem, przedstawię w skrócie uzasadnienie poprawności powyższego rozwiązania.</p>
+
+<p>Wprowadźmy podstawową terminologię. Dla danego ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">, szukany niemalejący ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> nazwiemy <em>najlepszą aproksymacją</em> (tj. najlepszym przybliżeniem), natomiast wartość <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9905ec187299d0707de7c367fa64e54f29436927.png" alt="$ w_{a,b} $"> nazwiemy <em>błędem aproksymacji</em>. Zacznijmy od pseudokodu opisanego wyżej rozwiązania. Korzystamy w nim z listy <tt><span style="font-size: 10pt;">L</span></tt>, reprezentującej aktualną postać przekształcanego ciągu (zaczynamy od listy reprezentującej ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">). Lista <tt><span style="font-size: 10pt;">L</span></tt> zawiera pary postaci: (<tt><span style="font-size: 10pt;">x</span></tt> - element będący najlepszą aproksymacją fragmentu ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">, <tt><span style="font-size: 10pt;">ilość</span></tt> - liczba elementów ciągu w tym fragmencie). Ponieważ jest to tylko pseudokod, możemy sobie w nim pozwolić na pewne nadużycie: zakładamy, że kolejne elementy listy możemy indeksować liczbami od <tt><span style="font-size: 10pt;">1</span></tt> do <tt><span style="font-size: 10pt;">L.size()</span></tt>, zupełnie jak w przypadku tablicy (korzystamy przy tym zawsze tylko z kolejnych indeksów).</p><p>
+
+</p><div class="geshifilter"><table class="cpp geshifilter-cpp" style="font-family:monospace;"><tbody><tr class="li1"><td class="ln"><pre class="de1">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="de1"><pre class="de1"><span class="kw1">for</span> i <span class="sy1">=</span> <span class="nu0">1</span> to n <span class="kw1">do</span>
+&nbsp; L.<span class="me1">insert</span><span class="br0">(</span>a<span class="br0">(</span>i<span class="br0">)</span>, <span class="nu0">1</span><span class="br0">)</span><span class="sy4">;</span>
+i <span class="sy1">=</span> <span class="nu0">1</span><span class="sy4">;</span>
+<span class="kw1">while</span> <span class="br0">(</span>i <span class="sy1">&lt;</span> L.<span class="me1">size</span><span class="br0">(</span><span class="br0">)</span><span class="br0">)</span> <span class="br0">{</span>
+&nbsp; <span class="kw1">if</span> <span class="br0">(</span>L<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">x</span> <span class="sy1">&gt;</span> L<span class="br0">[</span>i <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span>.<span class="me1">x</span><span class="br0">)</span> <span class="br0">{</span>
+&nbsp; &nbsp; L<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">x</span> <span class="sy1">=</span> średnia<span class="br0">(</span>L<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">x</span>, L<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">ilo</span>ść, L<span class="br0">[</span>i <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span>.<span class="me1">x</span>, L<span class="br0">[</span>i <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span>.<span class="me1">ilo</span>ść<span class="br0">)</span><span class="sy4">;</span>
+&nbsp; &nbsp; L<span class="br0">[</span>i<span class="br0">]</span>.<span class="me1">ilo</span>ść <span class="sy2">+</span><span class="sy1">=</span> L<span class="br0">[</span>i <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span>.<span class="me1">ilo</span>ść<span class="sy4">;</span>
+&nbsp; &nbsp; L.<span class="me1">erase</span><span class="br0">(</span>L<span class="br0">[</span>i <span class="sy2">+</span> <span class="nu0">1</span><span class="br0">]</span><span class="br0">)</span><span class="sy4">;</span>
+&nbsp; &nbsp; <span class="kw1">if</span> <span class="br0">(</span>i <span class="sy1">&gt;</span> <span class="nu0">1</span><span class="br0">)</span> <span class="sy2">--</span>i<span class="sy4">;</span>
+&nbsp; <span class="br0">}</span> <span class="kw1">else</span> <span class="sy2">++</span>i<span class="sy4">;</span>
+<span class="br0">}</span>
+<span class="kw1">return</span> L<span class="sy4">;</span></pre></td></tr></tbody></table></div>
+
+<p></p><p>Jeżeli warunek <tt><span style="font-size: 10pt;">L[i].x &gt; L[i + 1].x</span></tt> zachodzi, to zgodnie z wcześniejszym nieformalnym opisem dokonujemy wówczas scalenia kolejnych fragmentów ciągu, przydzielając wynikowemu fragmentowi wartość będącą średnią arytmetyczną z wszystkich jego wyrazów. Odpowiada za to funkcja <tt><span style="font-size: 10pt;">średnia</span></tt>, która zwraca wynik zgodnie ze wzorem:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ae75c27d2c4dbbeaffd745d39828a998958a1539.png" alt="$$\frac{L[i].x * L[i].ilość + L[i + 1].x * L[i + 1].ilość}{L[i].ilość + L[i + 1].ilość}$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>Uzasadnienie poprawności tego wzoru jest natychmiastowe, jeżeli zauważyć, że pole <tt><span style="font-size: 10pt;">x</span></tt> reprezentuje średnią z elementów ciągu w <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/49239c18f4fb6304335303e00e255ee36512aad5.png" alt="$ i $">-tym fragmencie, a zatem wyrażenie postaci <tt><span style="font-size: 10pt;">L[i].x * L[i].ilość</span></tt> oznacza sumę elementów <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/49239c18f4fb6304335303e00e255ee36512aad5.png" alt="$ i $">-tego fragmentu ciągu. Co więcej, łatwo zauważyć, że w wynikowej liście <tt><span style="font-size: 10pt;">L</span></tt> wartości <tt><span style="font-size: 10pt;">L[i].x</span></tt> są posortowane niemalejąco (dbamy o to m.in. w linii "<tt><span style="font-size: 10pt;">if (i &gt; 1) --i;</span></tt>"), czyli reprezentują poprawną niemalejącą aproksymację ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">.</p>
+
+<p>Złożoność czasowa powyższego rozwiązania to <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/a4a12dda3c60997eb130fcefbbb9d4ce719dea6b.png" alt="$ \mathcal{O}(n) $">. Aby to uzasadnić, wystarczy przyjrzeć się parametrowi <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/cc71ff9c6dcc6f4288a8dc4df2e0e76437f89eda.png" alt="$ W = 2*L.size() - i  $">. Przed pierwszym obrotem pętli <strong>while</strong> <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/8a49bc2c713d9f60353c68c3f94287564650b2fd.png" alt="$ W = 2n - 1 $">, a przy każdym obrocie pętli parametr ten zmniejsza się co najmniej o jeden i pozostaje cały czas dodatni. Widać więc, że ograniczenie <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/eba307f190d1d726a366dfeb192d86bd883f82ea.png" alt="$ n\leq 2500 $"> z konkursu jest tak naprawdę bardzo łagodne.</p>
+
+<p>Wiemy już, że nasz algorytm jest bardzo efektywny oraz że zwraca w wyniku ciąg niemalejący. Pozostaje najtrudniejsza kwestia: uzasadnić, że jest on <em>najlepszą aproksymacją</em> ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">. W tym celu trzeba pokazać trzy rzeczy (z pierwszych dwóch wynika, że wynikowy ciąg w algorytmie jest kawałkami najlepszą aproksymacją ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">, natomiast z trzeciego, że wówczas jest już najlepszą aproksymacją całego ciągu):</p>
+
+<ol>
+<li>Jeżeli najlepsza aproksymacja jednego fragmentu ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $"> jest ciągiem stałym o elementach równych <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/b14da9a5b64746f7ac57b61f20d09accdf57bc75.png" alt="$ x $">, a najlepsza aproksymacja drugiego - ciągiem stałym o elementach równych <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9382bdef9ee008d0e5d3a0e77709140d6ff79293.png" alt="$ y $"> oraz <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/e5561d14ded55b89c7db3b7fa6183f1c27d6ceb0.png" alt="$ x \geq y $">, to najlepsza aproksymacja ciągu będącego sklejeniem tych dwóch fragmentów jest także ciągiem stałym.</li>
+<li>Jeżeli najlepsza aproksymacja fragmentu ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $"> jest ciągiem stałym, to jego wyrazem jest średnia arytmetyczna z wyrazów tego fragmentu.</li>
+<li>Jeżeli jakiś ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $"> stanowi najlepszą aproksymację każdego z fragmentów ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $"> (liczba tych fragmentów może być dowolna, ważne aby pokrywały cały ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">), to jest on najlepszą aproksymacją całego ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">.</li>
+</ol>
+
+<p>Drugi z powyższych faktów można uzasadnić, podobnie jak w szczególnym, zero-jedynkowym przypadku, za pomocą argumentu z pochodną wyrażenia <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9905ec187299d0707de7c367fa64e54f29436927.png" alt="$ w_{a,b} $">. Uzasadnienie trzeciego faktu polega na rozbiciu wzoru na <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9905ec187299d0707de7c367fa64e54f29436927.png" alt="$ w_{a,b} $"> na kawałki odpowiadające wspomnianym fragmentom ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">. Niestety, dokładny dowód pierwszego faktu jest bardziej skomplikowany i dosyć techniczny. W (telegraficznym) skrócie polega on na tym, że startujemy od jakiejkolwiek najlepszej niemalejącej aproksymacji <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/f285e47931672fc3769fc5a00d8acd5760c1d7b8.png" alt="$ u $"> sklejenia dwóch fragmentów i pokazujemy, jak w kolejnych krokach modyfikować ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/f285e47931672fc3769fc5a00d8acd5760c1d7b8.png" alt="$ u $"> tak, aby stał się najpierw stały na każdym ze sklejanych fragmentów, a następnie w ogóle stały. Każde z opisanych przekształceń polega na ciągłym podciąganiu lub opuszczaniu pewnych fragmentów ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/f285e47931672fc3769fc5a00d8acd5760c1d7b8.png" alt="$ u $">, a wykorzystujemy przy tym fakt, że funkcja określająca błąd aproksymacji ciągu ciągiem stałym jest kwadratowa i wypukła.</p>
+
+<p>Podane uzasadnienie poprawności algorytmu jest bardzo niepełne. Pod koniec artykułu można znaleźć odnośnik do pełnego dowodu poprawności.</p>
+
+<h2>Dalsza historia zadania</h2>
+
+<p>Jednym z zadań na Bałtyckiej Olimpiadzie Informatycznej <a href="http://www.boi2004.lv/">BOI 2004</a> było zadanie Sequence. Okazało się ono bardzo trudne i zostało rozwiązane poprawnie tylko przez zwycięzcę tych zawodów - Filipa Wolskiego. Zadanie to polegało także na znalezieniu niemalejącego (w oryginale: rosnącego i całkowitoliczbowego, ale nie miało to aż takiego znaczenia) ciągu <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/debabd5b5606faf08547b4a6ce16a61f66bc202f.png" alt="$ b $">, który najlepiej aproksymuje zadany ciąg <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9a665c97c7f211ab1b047fc84fa743fd6f2d4e09.png" alt="$ a $">, tyle że miarą błędu aproksymacji było:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/aff75e6c057584e00ffaeb702fd25228b88fbc12.png" alt="$$w_{a,b} = |a_1 - b_1| + |a_2 - b_2| + \ldots + |a_n - b_n|$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>Oryginalne, bardzo pomysłowe rozwiązanie Filipa (złożoność czasowa <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/3ca851b3cea2cd6a67971b3a61125bc7a731ea1e.png" alt="$ \mathcal{O}(n\log n) $">) jest opisane w <a href="http://www.mimuw.edu.pl/delta/artykuly/delta1107/index.html">Delcie 11/2007</a>. Co ciekawe jednak, rozwiązanie zadania z TopCodera daje się wykorzystać także i w tym zadaniu! Wystarczy w nim podmienić funkcję <tt><span style="font-size: 10pt;">średnia</span></tt> z powyższego pseudokodu funkcją, która wyznacza najlepszą stałą aproksymację ciągu zgodnie z nową postacią wzoru na <em>w<sub>a,b</sub></em>, a jest nią mianowicie <a href="http://pl.wikipedia.org/wiki/Mediana">mediana</a> ciągu. (Uzasadnienie poprawności tego stwierdzenia oraz sprawdzenie, że wszystkie opisane w poprzedniej sekcji fakty działają także i w tym przypadku, pomijam). Pozostaje jeszcze pytanie, jak efektywnie takie mediany wyznaczać.</p>
+
+<p>Otóż z każdym elementem listy <tt><span style="font-size: 10pt;">L</span></tt> wystarczy związać jakieś drzewo zrównoważone <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/52b80f6086df31d197b538aad85c3849e8bd9f1d.png" alt="$ S $"> (np. <a href="http://pl.wikipedia.org/wiki/Drzewo_AVL">AVL</a> czy <a href="http://pl.wikipedia.org/wiki/Drzewo_czerwono-czarne">czerwono-czarne</a>) do przechowywania wszystkich elementów ciągu odpowiadających temu elementowi listy. Korzystając z takiego drzewa, można w czasie <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/e5ad29aff7e7aa1a99a8b26100cf1d9c697f395e.png" alt="$ \mathcal{O}(\log n) $"> wyznaczyć medianę z elementów w nim zawartych. Pozostaje jedynie problem, jak aktualizować takie drzewa w momencie scalania elementów listy, czyli po prostu jak scalać takie drzewa. Okazuje się, że wystarczy przenieść wszystkie elementy z <em>mniejszego</em> drzewa do większego, tzn. kolejno usuwać z mniejszego i wstawiać do większego. Wówczas co prawda pojedyncze scalenie może zająć dużo czasu, ale łączny koszt wszystkich scaleń będzie <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/1f8d5f07e3651960f1eb847dd479b3d0e0eeaa72.png" alt="$ \mathcal{O}(n\log^2 n) $">. Jest tak dlatego, że każdy element <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/81853acb894e5ed533899140190d5df88f352aee.png" alt="$ a_i $"> zostanie przeniesiony w całym algorytmie co najwyżej <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/62399c4a61ba90870808d439d69e79ad8e8f9dc0.png" alt="$ \log n $"> razy, gdyż podczas takiego przenoszenia rozmiar drzewa, do którego należy (w sensie: liczba elementów ciągu znajdujących się w drzewie), wzrasta co najmniej dwukrotnie. Ponieważ koszt czasowy pojedynczego przeniesienia to <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/e5ad29aff7e7aa1a99a8b26100cf1d9c697f395e.png" alt="$ \mathcal{O}(\log n) $">, a łącznie elementów mamy <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/3407c015040c79e3c0ad3d8bc112ec41616e53a8.png" alt="$ n $">, więc faktycznie złożoność czasowa algorytmu to <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/1f8d5f07e3651960f1eb847dd479b3d0e0eeaa72.png" alt="$ \mathcal{O}(n\log^2 n) $">.</p>
+
+<p>Idąc dalej, można rozwiązać zadanie podobne do dwóch już przedstawionych, w którym minimalizujemy wartość wyrażenia:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/7b31f024d79a042bd0c5d443882b532f333a32e4.png" alt="$$w_{a,b} = \max(|a_1 - b_1|, |a_2 - b_2|, \ldots, |a_n - b_n|)$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>W tym celu można także zastosować ogólny schemat, w którym tym razem zamiast operacji <tt><span style="font-size: 10pt;">średnia</span></tt> należy wstawić średnią z minimalnego i maksymalnego elementu fragmentu ciągu. (Sprawdzenie, że tak właśnie wygląda najlepsza stała aproksymacja w tym przypadku, jest natychmiastowe). Otrzymujemy wówczas rozwiązanie o złożoności czasowej <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/a4a12dda3c60997eb130fcefbbb9d4ce719dea6b.png" alt="$ \mathcal{O}(n) $">. Istnieje także znacznie prostsze koncepcyjnie rozwiązanie tej wersji zadania o tej samej złożoności, którego jednak w tym miejscu nie przytoczę. Wszystkie trzy opisane zadania można rozwiązać w Staszicowym serwisie KI: <a href="http://ki.staszic.waw.pl/task.php?name=aproksymacja1">Aproksymacja</a>, <a href="http://ki.staszic.waw.pl/task.php?name=aproksymacja2">Aproksymacja kontratakuje</a> i <a href="http://ki.staszic.waw.pl/task.php?name=aproksymacja3">Powrót aproksymacji</a>.</p>
+
+<p>Ale to nie koniec. Otóż okazuje się, że wszystkie trzy występujące w powyższych zadaniach wzory na <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/9905ec187299d0707de7c367fa64e54f29436927.png" alt="$ w_{a,b} $"> są szczególnymi przypadkami czegoś, co w matematyce określa się mianem <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/30b86960ed054ff502b7ae01a780de652df0f769.png" alt="$ p $">-tej <a href="http://pl.wikipedia.org/wiki/Przestrze%C5%84_unormowana">normy</a> <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/3407c015040c79e3c0ad3d8bc112ec41616e53a8.png" alt="$ n $">-wymiarowego wektora <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/175e1e576ee785292d662a596fea11b931ffcf49.png" alt="$ a-b $">. Wyraża się ona wzorem:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/872c32071fd125792b4b87841dc69462bc1a6fce.png" alt="$$||a-b||_p = ( (a_1 - b_1)^p + (a_2 - b_2)^p + \ldots + (a_n + b_n)^p )^{1/p}$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>dla <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/30b86960ed054ff502b7ae01a780de652df0f769.png" alt="$ p $"> całkowitego dodatniego oraz:</p><p>
+
+</p><table class="displaymath"><tbody><tr><td class="dspleft"><img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ffe806e637f343297aca400c7c268a6cd59765f3.png" alt="$$||a-b||_p = max(|a_1 - b_1|, |a_2 - b_2|, \ldots, |a_n + b_n|)$$"></td><td class="dspright"></td></tr></tbody></table>
+
+<p></p><p>dla <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/4d4bcc79e66aa1317f9d1713ef910a16e469c7d9.png" alt="$ p=\infty $">. Jak można się domyślić, odpowiednio zmodyfikowane rozwiązanie zadania z TopCodera działa także i w tym ogólnym przypadku. Pozwala to wypracować ogólny algorytm działający dla wszystkich <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/30b86960ed054ff502b7ae01a780de652df0f769.png" alt="$ p $">-tych norm, ale także i efektywne algorytmy dla innych wartości parametru <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/30b86960ed054ff502b7ae01a780de652df0f769.png" alt="$ p $">, chociażby dla <img class="teximage" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/866914c02c73679c6a299e33863b5272d3ea77f9.png" alt="$ p=3,4,5 $">. Dzięki poczynionym uogólnieniom, nocne rozwiązywanie pewnego zadania z konkursu doprowadziło mnie nie tylko do Las Vegas, ale także do napisania <a href="http://www.mimuw.edu.pl/~jrad/dyplomowe/aproksymacja.pdf">pracy licencjackiej</a> z matematyki na temat aproksymacji ciągów ciągami monotonicznymi. I to wreszcie przesądziło o fakcie, że wyjściowe zadanie plasuje się na pierwszym miejscu wśród moich ulubionych.</p><div class="fivestar-static-form-item"><div class="form-item">
+ <label>Ocena: </label>
+ <div class="fivestar-widget-static fivestar-widget-static-vote fivestar-widget-static-5 clear-block"><div class="star star-1 star-odd star-first"><span class="on">5</span></div><div class="star star-2 star-even"><span class="on"></span></div><div class="star star-3 star-odd"><span class="on"></span></div><div class="star star-4 star-even"><span class="on"></span></div><div class="star star-5 star-odd star-last"><span class="on"></span></div></div>
+ <div class="description"><div class="fivestar-summary fivestar-summary-combo"><span class="user-rating">Twoja ocena: <span>Brak</span></span> <span class="average-rating">Ocena: <span>5</span></span> <span class="total-votes">(<span>3</span> ocen)</span></div></div>
+</div>
+</div>  </div>
+
+  <div class="clear-block">
+          <div><ul class="links inline"><li class="print_html first last"><a href="http://informatyka.wroc.pl/print/160" title="Wyświetl wersję do wydruku tej strony." class="print-page" rel="nofollow">Wersja do wydruku</a></li>
+</ul><div class="social_links">
+    <ul class="links inline">
+      <li><div style="text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 70px; height: 15px; background-position: initial initial; background-repeat: initial initial;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 70px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 15px;" tabindex="0" vspace="0" width="100%" id="I0_1366121726322" name="I0_1366121726322" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/fastbutton.htm" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div></li>
+      <li><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Finformatyka.wroc.pl%2Fnode%2F160&t=Monotoniczna+aproksymacja" title="Udostępnij na Facebooku"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/facebook.png" alt="facebook">&nbsp;Facebook</a></li>
+      <li><a href="http://twitter.com/home?status=Monotoniczna+aproksymacja+-+http%3A%2F%2Finformatyka.wroc.pl%2Fnode%2F160" title="Udostępnij na Twitterze"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/twitter.png" alt="twitter">&nbsp;Twitter</a></li>
+      <li><a href="http://www.wykop.pl/dodaj?url=http%3A%2F%2Finformatyka.wroc.pl%2Fnode%2F160" title="Udostępnij na Wykopie"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/_pl_wykop.png" alt="_pl_wykop">&nbsp;Wykop</a></li>
+      <li><a href="http://blip.pl/dashboard?body=Monotoniczna+aproksymacja+-+http%3A%2F%2Finformatyka.wroc.pl%2Fnode%2F160" title="Udostępnij na Blipie"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/_pl_blip.png" alt="_pl_blip">&nbsp;Blip</a></li>
+      <li><a href="http://nasza-klasa.pl/sledzik?shout=Monotoniczna+aproksymacja+-+http%3A%2F%2Finformatyka.wroc.pl%2Fnode%2F160" title="Udostępnij na Śledziku"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/_pl_sledzik.png" alt="_pl_sledzik">&nbsp;Śledzik</a></li></ul></div></div>
+      </div>
+
+</div>
+        </div>
+        </td>
+
+        <!-- prawe menu -->
+        <td class="main_column">
+        <div id="sidebar_right">
+            
+            <div class="user_panel">
+                <!-- profil -->
+
+                <div id="block-user-0" class="block block-user">
+  <h2>Logowanie</h2>
+
+  <div class="content">
+    <form action="https://informatyka.wroc.pl/node/160?destination=node%2F160" accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item" id="edit-name-wrapper">
+ <label for="edit-name">nazwa użytkownika: <span class="form-required" title="Wypełnienie pola jest wymagane.">*</span></label>
+ <input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required">
+</div>
+<div class="form-item" id="edit-pass-wrapper">
+ <label for="edit-pass">hasło: <span class="form-required" title="Wypełnienie pola jest wymagane.">*</span></label>
+ <input type="password" name="pass" id="edit-pass" maxlength="60" size="15" class="form-text required">
+</div>
+<input type="submit" name="op" id="edit-submit" value="Zaloguj" class="form-submit">
+<div class="item-list"><ul><li class="first"><a href="http://informatyka.wroc.pl/user/register" title="Rejestracja">Rejestracja</a></li>
+<li class="last"><a href="http://informatyka.wroc.pl/user/password" title="Zapomniałem hasła" class="darker">Zapomniałem hasła</a></li>
+</ul></div><input type="hidden" name="form_build_id" id="form-43deac4adb19954c151380dbfb93bf2f" value="form-43deac4adb19954c151380dbfb93bf2f">
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block">
+<input type="hidden" name="securelogin_original_baseurl" id="edit-securelogin-original-baseurl" value="http://informatyka.wroc.pl">
+
+</div></form>
+  </div>
+</div>
+<div id="block-advertised_nodes-0" class="block block-advertised_nodes">
+  <h2>Polecane artykuły</h2>
+
+  <div class="content">
+    <div class="sidebar_right_block">
+     <div class="sidebar_right_block_title">
+         <h2 class="advertised_nodes_section_title">Polecane aktywności</h2>
+     </div>
+     <div class="sidebar_right_block_content"> <small>Marek Szykuła</small> <h3><a href="http://informatyka.wroc.pl/scriptcraft">ScriptCraft: RTS ze skryptami</a></h3> <small>Bartosz Dolecki</small> <h3><a href="http://informatyka.wroc.pl/smok">Smok: programowanie inaczej</a></h3> <small>Marek Szykuła</small> <h3><a href="http://informatyka.wroc.pl/node/143">Bloki - gra logiczna</a></h3>   </div>
+     <div class="sidebar_right_block_corner"></div>
+   </div><div class="sidebar_right_block">
+     <div class="sidebar_right_block_title">
+         <h2 class="advertised_nodes_section_title">Polecane artykuły</h2>
+     </div>
+     <div class="sidebar_right_block_content"><small><a href="http://marcindev.blogspot.com/">Marcin Milewski</a></small><h3 class="green"><a href="http://informatyka.wroc.pl/node/387">Platformówka - jak to się robi?</a></h3> <small>Mateusz Osowski</small> <h3 class="green"><a href="http://informatyka.wroc.pl/node/742">Własny silnik gry TPP</a></h3><small>Maciej Piróg</small><h3 class="green"><a href="http://informatyka.wroc.pl/node/391">Własny język programowania</a></h3><small><a href="http://informatyka.wroc.pl/node/372">Olgierd Humeńczuk</a></small><h3 class="green"><a href="http://informatyka.wroc.pl/node/619">Arkanoid 3D krok po kroku</a></h3><small><a href="http://informatyka.wroc.pl/node/377">Krzysztof Kercz</a></small><h3 class="green"><a href="http://informatyka.wroc.pl/node/546">Synteza mowy III: Finał</a></h3><small><a href="http://atablash.pl/">Adam Błaszkiewicz</a></small><h3 class="green"><a href="http://informatyka.wroc.pl/node/473">DirectX: Labirynt 3D od podstaw</a></h3><small>Marcin Bieńkowski</small><h3 class="green"><a href="http://informatyka.wroc.pl/node/356">Krowa, las i eksploracja terenu</a></h3> <small>Opieka: Damian Rusak</small><h3 class="green"><a href="http://informatyka.wroc.pl/node/307">Algorytmy: Zostań zawodnikiem</a></h3>   </div>
+     <div class="sidebar_right_block_corner"></div>
+   </div>  </div>
+</div>
+<div id="block-search-0" class="block block-search">
+  <h2>Szukaj</h2>
+
+  <div class="content">
+    <form action="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/Monotoniczna aproksymacja   Wrocławski Portal Informatyczny.htm" accept-charset="UTF-8" method="post" id="search-block-form">
+<div><div class="container-inline">
+  <div class="wpi_search_block">
+                <div class="sidebar_right_block">
+                    <div class="sidebar_right_block_content">
+    <div class="form-item" id="edit-search-block-form-1-wrapper">
+ <label for="edit-search-block-form-1">Wyszukiwanie w witrynie: </label>
+ <input type="text" maxlength="128" name="search_block_form" id="edit-search-block-form-1" size="15" value="" title="Wprowadź słowa, które mają zostać wyszukane." class="form-text">
+</div>
+<input type="submit" name="op" id="edit-submit-1" value="szukaj" class="form-submit search_button">
+<input type="hidden" name="form_build_id" id="form-5594aba1535f7d69c828de5bb881254a" value="form-5594aba1535f7d69c828de5bb881254a">
+<input type="hidden" name="form_id" id="edit-search-block-form" value="search_block_form">
+               </div>
+                    <div class="sidebar_right_block_corner"></div>
+                </div>
+    </div>
+    </div>
+
+</div></form>
+  </div>
+</div>
+            </div>
+
+            <div class="banner"></div>
+            <div class="banner"></div>
+            <div class="banner"></div>
+        </div>
+        </td>
+
+        </tr></tbody></table>
+
+        <!-- mapa strony -->
+
+        
+        <div id="footer">
+            <div id="partners_upper_corner"></div>
+            <div id="partners_lower_corner"></div>
+
+            <!-- partnerzy -->
+
+            <div id="partners">
+                <p>Pod patronatem:</p>
+                <a href="http://www.ii.uni.wroc.pl/"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ii.gif" style="margin-right: 15px;" alt=""></a>
+                <a href="http://www.wroclaw.pl/"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/wroclaw.gif" alt=""></a>
+            </div>
+
+            <div id="site_map">
+                <a href="http://informatyka.wroc.pl/rss.xml" title="RSS">
+                    <img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/rss.gif" style="position: absolute; top: 25px; right: 25px; width: 16px; height: 16px;" alt="RSS">
+                </a>
+
+                <ul>
+                    <li><p>Informacje</p></li>
+                    <li><a href="http://informatyka.wroc.pl/node/180" title="O portalu">O portalu</a></li>
+                    <li><a href="http://informatyka.wroc.pl/authors" title="Autorzy">Autorzy</a></li>
+                    <li><a href="http://informatyka.wroc.pl/sitemap" title="Mapa portalu">Mapa portalu</a></li>
+                    <li><a href="http://informatyka.wroc.pl/bugs/submit" title="Zgłoś błąd">Zgłoś błąd</a></li>
+                </ul>
+
+                <div id="site_map_upper_corner"></div>
+                <div id="site_map_lower_corner"></div>
+            </div>
+
+            <div style="clear: both;"></div>
+        </div>
+
+        
+        <div style="clear: both;"></div>
+
+      <!-- stopka -->
+
+      <div id="copyrights">
+          <p style="float: left; width: 75%;">
+              Copyright © 2008-2010 <a href="http://informatyka.wroc.pl/">Wrocławski Portal Informatyczny</a>
+          </p>
+
+          <p style="float: right; width: 25%; text-align: right;">
+              design: <a href="http://rafalpolito.com/">rafalpolito.com</a>
+          </p>
+      </div>
+  </div>
+
+  <!-- Piwik -->
+<script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://informatyka.wroc.pl/piwik/" : "http://informatyka.wroc.pl/piwik/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/piwik.js" type="text/javascript"></script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript>&lt;p&gt;&lt;img src="http://informatyka.wroc.pl/piwik/piwik.php?idsite=1" style="border:0" alt="" /&gt;&lt;/p&gt;</noscript>
+<!-- End Piwik Tag -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9080415-1");
+pageTracker._trackPageview();
+} catch(err) {}</script><script type="text/javascript" src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/plusone.js" gapi_processed="true"></script><div id="goog-gt-tt" class="goog-tooltip skiptranslate" dir="ltr" style="visibility: hidden; left: 1453px; top: 821px; display: none;"><div style="padding: 8px;"><div><div class="logo"><img src="./Monotoniczna aproksymacja   Wrocławski Portal Informatyczny_files/translate-32.png" width="20" height="20"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">Original text</h1></div><div class="middle" style="padding: 8px;"><div class="original-text">Krowa, las i eksploracja terenu</div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">Contribute a better translation</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none; opacity: 0;"></div></div>
+
+  </body></html>
