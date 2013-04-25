@@ -3,7 +3,7 @@ for i = 1 to n do
 i = 1;
 while (i < L.size()) {
   if (L[i].x > L[i + 1].x) {
-    L[i].x = average(L[i].x, L[i].mean, L[i + 1].x, L[i + 1].mean);
+    L[i].x = average(L[i].x, L[i].length, L[i + 1].x, L[i + 1].length);
     L[i].length += L[i + 1].length;
     L.erase(L[i + 1]);
     if (i > 1) --i;
