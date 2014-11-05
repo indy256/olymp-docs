@@ -1,0 +1,1 @@
+Do Floyd-Warshall and before adding an edge with vertices A and B check whether you already have the path between A and B. If you have a path already then you found the cycle using that path + edge you're adding. This way you will find the shortest cycle. Now you only have to restore the cycle.
